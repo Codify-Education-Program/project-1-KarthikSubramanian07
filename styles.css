@@ -165,3 +165,33 @@ footer {
     margin: 0 auto 20px auto;
   }
 }
+
+/* Dark mode styles */
+
+body.dark header {
+  background-color: #1f1f1f;
+}
+
+body.dark #home p {
+  color: antiquewhite;
+}
+
+body.dark main,
+body.dark footer,
+body.dark .projects-grid li,
+body.dark nav a {
+  background-color: dimgray;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+#darkModeToggle {
+  background-color: #7abaf1;
+  color: #003262;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#darkModeToggle:hover {
+  background-color: #9cd5ff;
+}

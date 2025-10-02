@@ -26,6 +26,8 @@
           <a href="#music">Music</a>
           <a href="#contact">Contact</a>
         </nav>
+        <BR/>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
       </header>
 
       <main>
@@ -133,6 +135,11 @@
       <a href="#home" class="back-to-top" title="Scroll to Top">⬆</a>
     </div>
   </body>
+
+  <script>
+    document.getElementById('darkModeToggle').onclick = () =>
+      document.body.classList.toggle('dark');
+  </script>
   
 </html>
 
