@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #fff;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -55,4 +56,47 @@ section {
 footer {
   text-align: center;
   padding: 1rem;
+}
+
+#home p {
+  color: #002676;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex-grow: 1;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects-list li {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 50, 98, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: default;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.projects-list li:hover {
+  transform: translateY(-3px); /* Lifts the card slightly */
+  box-shadow: 0 8px 16px rgba(0, 50, 98, 0.2); /* Deeper shadow on hover */
+  background-color: #f9f9f9;
 }
