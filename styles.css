@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #003262;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #005f99;
+  color: aqua;
+}
+
+main {
+  padding: 2rem;
+  border: 1px solid black;
+  background: #f2f2f2;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#home p {
+  color: #002676;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex-grow: 1;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects-list li {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 50, 98, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: default;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.projects-list li:hover {
+  transform: translateY(-3px); /* Lifts the card slightly */
+  box-shadow: 0 8px 16px rgba(0, 50, 98, 0.2); /* Deeper shadow on hover */
+  background-color: #f9f9f9;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 300px;
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 560px;
+  max-height: 315px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  background-color: #003262;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 100;
+  line-height: 1;
+}
+
+.back-to-top:hover {
+  background-color: #005f99;
+  transform: scale(1.05);
+}
+
+/* --- MOBILE SUPPORT --- */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .profile-photo {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+  }
+}
+
+/* Dark mode styles */
+
+body.dark header {
+  background-color: #1f1f1f;
+}
+
+body.dark #home p {
+  color: antiquewhite;
+}
+
+body.dark main,
+body.dark footer,
+body.dark .projects-grid li,
+body.dark nav a {
+  background-color: dimgray;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+#darkModeToggle {
+  background-color: #7abaf1;
+  color: #003262;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#darkModeToggle:hover {
+  background-color: #9cd5ff;
+}
